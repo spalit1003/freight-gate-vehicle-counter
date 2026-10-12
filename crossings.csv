@@ -1,0 +1,7 @@
+video_time_s,tracker_id,vehicle_type,line
+0.72,1,car,away_from_camera
+1.2,3,car,toward_camera
+1.44,2,truck,toward_camera
+1.56,4,car,toward_camera
+3.24,7,car,away_from_camera
+9.36,6,car,toward_camera
