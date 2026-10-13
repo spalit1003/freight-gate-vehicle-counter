@@ -1,6 +1,7 @@
 # Freight Gate Vehicle Counter
 
 Counts cars and trucks crossing a gate line in traffic-camera video and logs every crossing to a CSV.
+Designed for a freight yard gate; tested on public highway footage.
 Built with Roboflow (RF-DETR Nano model, a Roboflow Workflow for deduplication) and `supervision` (tracking and line counting).
 
 **Result: 6 of 6 crossings counted on a 12-second test clip, including 1 truck, after four iterations.**
