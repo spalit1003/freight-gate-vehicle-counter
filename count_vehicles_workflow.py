@@ -17,7 +17,7 @@ from supervision.assets import download_assets, VideoAssets
 
 WORKSPACE = "shreya-palit"
 WORKFLOW_ID = "freight-gate-vehicle-deduplication-1791846124550"
-FRAME_STRIDE = 3      # send every 3rd frame (saves API credits); 1 = every frame
+FRAME_STRIDE = 3      # send every 3rd frame 
 MAX_FRAMES = 300      # stop after this many source frames for a quick first run; None = full video
 # One counting line per side of the road (fractions of frame width/height).
 # Toward camera (left side): vehicles enter at the top, so the line sits low.
@@ -27,9 +27,9 @@ MEDIAN_X = 0.48
 TOWARD_Y = 0.75
 AWAY_Y = 0.60
 
+# Connecting to Roboflow
 SOURCE = download_assets(VideoAssets.VEHICLES)
-client = InferenceHTTPClient(api_url="https://serverless.roboflow.com",
-                             api_key=os.environ["ROBOFLOW_API_KEY"])
+client = InferenceHTTPClient(api_url="https://serverless.roboflow.com", api_key=os.environ["ROBOFLOW_API_KEY"])
 client.configure(InferenceConfiguration(api_key_transport="header"))
 
 info = sv.VideoInfo.from_video_path(SOURCE)

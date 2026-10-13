@@ -3,7 +3,7 @@
 Counts cars and trucks crossing a gate line in traffic-camera video and logs every crossing to a CSV.
 Built with Roboflow (RF-DETR Nano model, a Roboflow Workflow for deduplication) and `supervision` (tracking and line counting).
 
-**Result: 6 of 6 crossings counted on a 22-second test clip, including 1 truck, after four iterations.**
+**Result: 6 of 6 crossings counted on a 12-second test clip, including 1 truck, after four iterations.**
 
 ![annotated output](gate_annotated.gif)
 
@@ -82,7 +82,7 @@ Verified by counting crossings manually in the annotated video.
 
 ## Limitations
 
-- Tested on one 22-second clip. Longer footage, night, rain and heavy traffic are untested.
+- Tested on one 12-second clip. Longer footage, night, rain and heavy traffic are untested.
 - The line positions were set by eye for this camera and would need adjusting for any other.
 
 ## Credits
